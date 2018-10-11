@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: 7e71c45f40a29a149a84a9d9a4e98338
+  productGUID: 3bdac30ba381d0f45b2df711bb16f5b5
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -654,8 +654,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 5eeef614-24b5-437d-8a75-b7d9551b036d
-  projectName: Island of Magick
+  cloudProjectId: 0b869d16-9436-4173-9bd7-70adf43317a4
+  projectName: Island of Magick (5)
   organizationId: valoraami
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
