@@ -24,6 +24,8 @@ public class BulletController : MonoBehaviour {
 		
         if (Input.GetButtonUp("Fire1"))
         {
+            this.sounds[2].Play();
+            Invoke("PlayShellSound", 1f);
             GameObject exp = Instantiate(this.explosion, this.GetComponent<Transform>().position, Quaternion.identity);
             Destroy(exp, 5f);
             GameObject ammo = Instantiate(this.bullet, this.GetComponent<Transform>().position, Quaternion.identity);
@@ -35,4 +37,10 @@ public class BulletController : MonoBehaviour {
 
 
     } // Update
+
+    void PlayShellSound()
+    {
+        this.sounds[3].Play();
+    }
+
 } // Class
