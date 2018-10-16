@@ -4,18 +4,39 @@ using UnityEngine;
 
 public class TargetController : MonoBehaviour {
 
-	
-	void Start () {
+    public GameObject exp3 = null;
+
+    private GameObject score = null;
+
+    private int hits = 0;
+
+
+    void Start () {
+
+        this.score = GameObject.Find("Player");
 		
 	} // Start
 	
 	
 	void Update () {
+
+        if(hits >= 3)
+        {
+            GameObject explosion = Instantiate(this.exp3, this.GetComponent<Transform>().position, Quaternion.identity);
+            Destroy(explosion, 8f);
+            Destroy(this.gameObject);
+            this.score.GetComponent<PointsCounter>().score += 1;
+        }
 		
 	} // Update
 
     private void OnCollisionEnter(Collision collision)
     {
-        gameObject.GetComponent<Rigidbody>().useGravity = true;
+        if (collision.gameObject.name == "killer")
+        {
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+            hits += 1;
+        }
+            
     }
 } // Class
