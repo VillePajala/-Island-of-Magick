@@ -1,5 +1,5 @@
 ![](Island%20of%20Magick/Assets/images/iom6.png)
-# Island of Magick
+# The Island of Magick
 
 A Short 3D first person shooter made in game developement course. The main goals I was concentrating on:
 
